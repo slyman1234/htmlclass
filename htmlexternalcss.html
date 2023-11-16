@@ -4,9 +4,84 @@
   <head>
     <title>Html external css</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+
+      * {
+        box-sizing:border-box;
+      }
+      #bodywork {
+        background: #fff no-repeat left top fixed;
+      }
+      #headertoronto {
+        color: white;
+      }
+      .bodytorono {
+        /* border-top-style: dotted ;
+        border-bottom-style:dashed ;
+        border-right-style: double;
+        border-left-style: ridge;
+        border-width: 5px 5px;
+        border-color: aqua red green black; */
+
+        border: 2px solid red;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 50%;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+      }
+      /* internal  */
+
+      .parentdiv {
+        background-color: blue;
+        height: 250px;
+        width: 70%;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .childdiv {
+        background-color: black;
+        height: 200px;
+        width: 50;
+        align-self: center;
+      }
+
+      .secondchilddiv {
+        background-color: red;
+        height: 200px;
+        width: 100%;
+        align-self: center;
+        text-align:justify;
+      }
+    </style>
   </head>
-  <body style="background-color: bisque">
+  <body id="bodywork">
+    <div class="parentdiv">
+      <div class="childdiv"></div>
+
+      <div class="secondchilddiv">
+
+        <p  style="text-decoration: underline; text-transform:uppercase;">
+          All products from toronto aare nice but i really cant vouch for winsperg.
+        </p>
+
+        <p >
+          All products from toronto aare nice but i really cant vouch for winsperg.
+        </p>
+
+
+      </div>
+    </div>
     <h1 id="headertoronto">Toronto goods</h1>
+    <p class="bodytoronoto">
+      All products from toronto aare nice but i really cant vouch for winsperg.
+    </p>
+    <p class="bodytorono">
+      All products from toronto aare nice but i really cant vouch for winsperg.
+    </p>
+
     <p class="bodytorono">
       All products from toronto aare nice but i really cant vouch for winsperg.
     </p>

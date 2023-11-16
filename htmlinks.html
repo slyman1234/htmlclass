@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Html Links</title>
+  </head>
+  <body>
+    <!--
+
+        Target attributes
+    
+        _self:
+        opens a link in the same tab
+
+        _blank
+
+        open a link in new tab
+
+        _parent
+        open a link in a parent frame
+        _top
+
+        open aa document in the full body of the windwo
+
+    -->
+    <a href="./htmcolor.html" target="_blank"> I am a blank target</a>
+    <br />
+    <br />
+
+    <a href="./htmcolor.html" target="_self"> I am a Self target</a>
+    <br />
+    <br />
+
+    <a href="./htmcolor.html" target="_parent"> I am a parent target</a>
+    <br />
+    <br />
+
+    <a href="./htmcolor.html" target="_top"> I am a top target</a>
+
+    <br />
+    <br />
+
+    <!-- Image as a link -->
+
+    <a href="./htmltags.html">
+      <img
+        src="./img/testimg.jpg"
+        alt="Link image"
+        style="width: 300px; height: 100px"
+      />
+    </a>
+
+    <!--
+
+        Mailto Link
+    -->
+    <br />
+    <br />
+
+    <a href="mailto:stallonoffer@gmail.com">Send mee a mail</a>
+    <br />
+    <br />
+
+    <!-- Button links-->
+
+    <button
+      onclick="document.location='./htmcomment.html'"
+      style="background-color: blue; color: white"
+    >
+      Html button links
+    </button>
+    <br />
+    <br />
+
+    <!--
+        Link Title
+    -->
+
+    <a href="./htmcssinternal.html" title="Go to html internal css"
+      >Link title</a
+    >
+
+    <!--  Link colors 
+    
+        an hyml link displays differeent colors base on
+         if it has been visted or not 
+
+         Active Link color
+
+         Visited link color 
+
+         unvisited Link Color 
+
+         hover link color
+    -->
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+
+    <a href="./htmcolor.html"> Home </a>
+
+    <a href="./htmcomment.html"> ABout us</a>
+
+    <a href="./htmcssinternal.html">Contact us </a>
+
+    <a href="./htmformatting.html"> MEssages </a>
+  </body>
+</html>

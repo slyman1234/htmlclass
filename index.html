@@ -2,24 +2,91 @@
 
 <html>
   <head>
-    <title>My page</title>
+    <title>Basic layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: blue;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 250px;
+        background-color: #999;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        width: 70%;
+        height: 250px;
+        background-color: #f1f1;
+        padding: 20px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: black;
+        padding: 10px;
+
+        text-align: center;
+        color: white;
+      }
+
+      @media only screen and (max-width: 620px) {
+        nav,
+        article {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <h1>new school rules</h1>
-    <p>
-      Come to school early <br />
-      and al others
-    </p>
+    <header>
+      <h2>Local governtments in Lagos.</h2>
+    </header>
 
-    /*** html attribute ***/ href attribute href attributes is defined inside an
-    a tag
-    <br />
-
-    <a href="https://google.com">Visit our website</a>
-
-    <br />
-
-    <img src="./img/testimg.jpg" height="200" width="200" />
+    <section>
+      <nav>
+        <ul>
+          <li>Ojo</li>
+          <li>Alimosho</li>
+          <li>Ikeja</li>
+          <li>Shomolu</li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Ojo</h1>
+        <p>
+          Ojo is is local government that has one of the biggest electronic
+          market in lagos . And also has one of the bigeest army cantonments in
+          lagos.
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>@lagos 2023</p>
+    </footer>
   </body>
 </html>

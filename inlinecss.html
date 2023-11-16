@@ -2,12 +2,215 @@
 
 <html>
   <head>
-    <title>Html inline css</title>
+    <title>CSS clas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body style="background-color: bisque;">
-    <h1 style="color: #ff0000;">Toronto goods</h1>
-    <p style="color: blue;">
-      All products from toronto aare nice but i really cant vouch for winsperg.
-    </p>
+
+  <body>
+    <div class="container">
+      <div class="headerdiv">
+        <div class="logo">
+          <h2 class="logotext">MIT</h2>
+        </div>
+
+        <div class="nav">
+          <ul class="nav1">
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user"></i> About Us</li>
+            <li><i class="fas fa-address-book"></i> Contact Us</li>
+            <li>
+              <i class="fas fa-question-circle" aria-hidden="true"></i> FAQ
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="title">
+          <h2 class="titletext">THE TECH INSTITUTE</h2>
+        </div>
+
+        <div class="description">
+          <p class="descriptiontext">
+            "The Tech Institute is a leading tech-focused educational hub,
+            providing expert training and resources for tech enthusiasts and
+            professionals. Explore the latest in technology, gain valuable
+            skills, and unlock exciting career opportunities with us."
+          </p>
+        </div>
+      </div>
+
+      <div class="services">
+        <div class="servicestitle">
+          <h2>What We Offer</h2>
+        </div>
+
+        <div class="serviceslist">
+          <div class="service1">
+            <div class="servicetext">
+              <h3 class="service1text">Web App Dev</h3>
+            </div>
+
+            <div>
+              <i class="fas fa-globe" id="webdevicon"></i>
+            </div>
+          </div>
+
+          <div class="service2">
+            <div>
+              <h3 class="service2text">Mobile App Dev</h3>
+            </div>
+
+            <div>
+              <i class="fas fa-mobile" id="webdevicon"></i>
+            </div>
+          </div>
+
+          <div class="service3">
+            <div>
+              <h3 class="service3text">E-commerce</h3>
+            </div>
+
+            <div>
+              <i class="fas fa-shopping-cart" id="webdevicon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutus">
+        <div class="aboutbody">
+          <div>
+            <h2 class="abouttext">
+              About MIT (Massachusetts Institute of Technology)
+            </h2>
+          </div>
+          <div>
+            <p class="aboutbodytext">
+              MIT, the Massachusetts Institute of Technology, is a
+              world-renowned institution at the forefront of scientific and
+              technological innovation. Established in 1861, MIT is dedicated to
+              advancing knowledge and educating students in the fields of
+              science, engineering, economics, and the social sciences. Our
+              mission is to address complex global challenges through
+              cutting-edge research and education, while instilling a sense of
+              curiosity and a commitment to excellence in our students.
+            </p>
+          </div>
+        </div>
+        <div class="aboutimage"></div>
+      </div>
+
+      <div class="review">
+        <div class="whattheysay">
+          <h2 class="reviewtiitle">What Our Customers Says</h2>
+        </div>
+
+        <div class="reviewinfo">
+          <div class="reviewterm">
+            <p class="reviewdescription">
+              I cannot express how grateful I am to have found this tech
+              solution institute. The courses are not only informative but also
+              incredibly engaging. The instructors are experts in their field,
+              and their passion for teaching truly shines through. The hands-on
+              experience I gained here was invaluable, and I now feel confident
+              in my tech skills. The support from the staff is outstanding, and
+              I highly recommend this institute to anyone looking to excel in
+              the tech world!
+            </p>
+
+            <h2 class="reviewname">Sarah Johnson</h2>
+
+            <img
+              src="./img/reviewone.jpg"
+              height="100"
+              width="100"
+              class="reviewimg"
+            />
+          </div>
+
+          <div class="reviewterm">
+            <p class="reviewdescription">
+              I've had the pleasure of being a part of this tech solution
+              institute, and it's been a game-changer for me. The instructors
+              here are top-notch, and they go the extra mile to ensure that you
+              understand the concepts thoroughly. The curriculum is up-to-date
+              with the latest industry trends, and the practical projects have
+              given me the confidence to tackle real-world tech challenges. The
+              institute's commitment to excellence is evident, and I'm proud to
+              say I'm a graduate. I can't thank them enough for helping me
+              kickstart my tech career!
+            </p>
+
+            <h2 class="reviewname">John Smith</h2>
+
+            <img
+              src="./img/reviewtwo.jpeg"
+              height="100"
+              width="100"
+              class="reviewimg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="contactinfo">
+          <h2 class="h2add">Company Address</h2>
+
+          <ul class="listadd">
+            <li class="addli">9 Ikeja Road</li>
+            <li class="addli">Aleke lagos Nigeria</li>
+          </ul>
+
+          <h2 class="h2add">Phone Number</h2>
+          <ul class="listadd">
+            <li class="addli">+23409033890898</li>
+            <li class="addli">+23409033890898</li>
+          </ul>
+          <h2 class="h2add">Email Address</h2>
+          <ul class="listadd">
+            <li class="addli">mit@mit.com</li>
+            <li class="addli">josh@mit.com</li>
+          </ul>
+        </div>
+        <div class="contactform">
+          <form>
+            <h3>Contact us with the form below</h3>
+            <div>
+              <p>Full name</p>
+              <input type="text" placeholder="Enter First name" />
+            </div>
+            <div>
+              <p>Email</p>
+              <input type="email" placeholder="Enter Email Adddress" />
+            </div>
+
+            <div>
+              <p>Message</p>
+              <textarea cols="40" rows="10" class="message"></textarea>
+            </div>
+
+            <div>
+          
+              <button type="submit" cols="40" rows="10" class="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="footer">
+
+        <p>@ Copyright MIIT 2023</p>
+
+      </div>
+    </div>
   </body>
 </html>
